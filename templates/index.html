@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
-    <link rel="stylesheet" href="/Users/peyman/Desktop/snake_game web/static/css/home.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 </head>
 <body>
     <div class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">Snake Game</a>
             <ul class="nav-links">
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Signup</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('signup') }}">Signup</a></li>
             </ul>
         </div>
     </div>
 
     <div class="preview-container">
         <div class="game-preview">
-            <img src="/Users/peyman/Desktop/snake_game web/static/images/game-preview.jpg" alt="Game Preview" class="preview-image">
+            <img src="{{ url_for('static', filename='images/game-preview.jpg') }}" alt="Game Preview" class="preview-image">
             <button class="play-btn" id="play-button">▶</button>
         </div>
     </div>
 
     <script>
         document.getElementById('play-button').addEventListener('click', () => {
-            window.location.href = 'levels.html'; // انتقال به صفحه مراحل
+        window.location.href = '{{ url_for('levels') }}'; // انتقال به صفحه مراحل
         });
     </script>
 </body>
