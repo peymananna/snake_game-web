@@ -1,0 +1,100 @@
+/* نوار بالا */
+.navbar {
+    background-color: #FF6347; /* رنگ شاد قرمز-نارنجی */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', cursive; /* فونت شاد */
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Comic Sans MS', cursive; /* فونت شاد */
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* رنگ زرد شاد */
+}
+
+/* کانتینر مراحل */
+.levels-container {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(45deg, #87CEFA, #FFB6C1); /* بک‌گراند رنگارنگ */
+    min-height: calc(100vh - 60px);
+}
+
+.levels-container h1 {
+    font-size: 36px;
+    color: #333;
+    font-family: 'Comic Sans MS', cursive;
+    margin-bottom: 40px;
+}
+
+/* گرید مراحل */
+.levels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.level-box {
+    background-color: #FFD700; /* رنگ زرد شاد */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', cursive;
+    transition: background-color 0.3s ease;
+}
+
+.level-box:hover {
+    background-color: #FFA500; /* رنگ نارنجی */
+}
+
+/* طراحی ریسپانسیو */
+@media (max-width: 768px) {
+    .levels-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .levels-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .level-box {
+        font-size: 20px;
+    }
+}

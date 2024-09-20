@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Snake Game</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <!-- <h1>Login Page</h1> -->
+        <div class="login-box">
+            <form action="/login" method="post">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

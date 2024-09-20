@@ -1,0 +1,91 @@
+/* نوار بالا */
+.navbar {
+    background-color: #FF6347; /* رنگ شاد قرمز-نارنجی */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', cursive; /* فونت شاد */
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Comic Sans MS', cursive; /* فونت شاد */
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* رنگ زرد شاد */
+}
+
+/* صفحه ثبت‌نام */
+.signup-container {
+    background-color: #f0f0f0; /* رنگ خاکستری روشن */
+    padding: 20px;
+    text-align: center;
+    height: calc(100vh - 60px); /* ارتفاع کامل صفحه منهای ارتفاع نوار بالا */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 90%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* طراحی ریسپانسیو */
+@media (max-width: 768px) {
+    .signup-box {
+        width: 90%;
+    }
+}
